@@ -30,6 +30,81 @@ footer{background:#fff8d8;color:#49422b;padding:25px 0;text-align:center;font-si
 .mobile-call{display:none}
 @media(max-width:850px){.head-main{gap:12px}.tag{display:none}.hero-grid{gap:20px}.benefit-grid{grid-template-columns:repeat(2,1fr)}.benefit:nth-child(2){border-left:0}.cat-grid,.products-grid{grid-template-columns:repeat(2,1fr)}.slat-layout{grid-template-columns:1fr}.slat-photo{max-height:260px}.navrow .container{gap:18px}}
 @media(max-width:560px){.model-grid{grid-template-columns:1fr}.model-art{height:160px}body{padding-bottom:62px}.topline .container{justify-content:center}.head-main{flex-wrap:wrap;padding:10px 0}.logo{font-size:25px}.search{order:3;flex-basis:100%}.head-call{margin-right:auto;padding:8px 10px;font-size:11px}.navrow .container{gap:20px;font-size:12px}.hero-grid{grid-template-columns:1fr;padding:35px 0}.hero h1{font-size:clamp(30px,7vw,38px);line-height:1.55}.hero h1 .brand-name{font-size:1em}.hero h1 .person-name{font-size:.84em}.hero p{font-size:13px}.hero-visual{min-height:245px}.shutter-door{height:170px;margin:0 25px}.scene-top{height:35px}.floating{font-size:10px}.benefit{padding:12px 5px;gap:7px}.benefit .ico{width:34px;height:34px}.benefit b{font-size:11px}.benefit small{font-size:10px}.section-title{align-items:flex-start}.section-title h2{font-size:22px}.cat-grid,.products-grid{gap:10px}.cat-img{height:115px}.product-img{height:140px}.cat-copy,.product-info{padding:10px}.product-info p{min-height:55px}.slat-details{gap:8px}.slat{padding:10px}.areas-grid,.contact-grid{grid-template-columns:1fr}.about-flex{align-items:flex-start;flex-direction:column}.mobile-call{display:block;position:fixed;z-index:60;bottom:0;right:0;left:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;box-shadow:0 -4px 16px #5a470020}}
+
+/* ATROLL redesign: modern industrial storefront */
+:root{--navy:#202020;--navy2:#353535;--red:#f2c400;--ink:#242424;--muted:#6f6f6f;--bg:#f7f7f4;--line:#e7e5dc;--white:#fff;--green:#28784b}
+body{background:#fff;color:#242424;font-family:Tahoma,"Segoe UI",sans-serif}
+.container{width:min(1240px,92%)}
+.topline{background:#202020;color:#fff;padding:8px 0}
+header{background:#fff;box-shadow:0 4px 24px #0000000b}
+.head-main{padding:18px 0;gap:26px}
+.logo{font-size:27px;color:#202020;letter-spacing:-.7px}
+.logo span{color:#202020!important;background:#f2c400;padding:0 6px;border-radius:4px}
+.tag{font-size:10px}
+.search{border:1px solid #dedede;background:#f7f7f4;border-radius:5px}
+.search button{background:#f2c400;color:#202020;font-weight:bold}
+.head-call{background:#202020;color:#fff;border-radius:5px}
+.navrow{border-top:1px solid #eee}
+.navrow .container{gap:30px;padding:13px 0}
+.navrow a:hover,.navrow .highlight{color:#8a6900}
+.hero{background:#f6f5ef;color:#202020;position:relative}
+.hero-grid{grid-template-columns:1fr 1fr;gap:54px;padding:62px 0}
+.badge{background:#f2c400;border:0;color:#202020;border-radius:3px;font-weight:bold;padding:6px 12px}
+.hero h1{font-size:clamp(34px,4vw,52px);line-height:1.42;letter-spacing:-1px}
+.hero h1 .brand-name{color:#202020;font-size:1em}
+.hero h1 .person-name{color:#8a6900;font-size:.82em;margin-top:6px}
+.hero h1 span{color:#8a6900}
+.hero p{color:#555;font-size:15px;line-height:2}
+.actions{gap:12px}
+.btn{border-radius:5px;padding:13px 19px}
+.btn-red{background:#f2c400;color:#202020}
+.btn-white{background:#fff;color:#202020;border:1px solid #ddd}
+.hero-points{color:#444}
+.hero-visual{min-height:340px}
+.shutter-scene{max-width:520px;border:8px solid #fff;border-radius:8px;background:linear-gradient(#eee9d6 0 43%,#c9b875 43% 46%,#292929 46%);box-shadow:0 24px 55px #00000018}
+.scene-top{background:linear-gradient(90deg,#fff,#e9e5d4);color:#242424}
+.shutter-door{height:245px;background:repeating-linear-gradient(to bottom,#dfe0dc 0,#fff 5px,#a6a6a0 7px,#e8e8e2 10px);border:7px solid #555;box-shadow:inset 0 0 20px #0002}
+.floor{background:linear-gradient(#555,#222)}
+.floating{border-radius:5px;color:#202020;box-shadow:0 10px 30px #0002}
+.floating b{color:#8a6900}
+.benefits{border-bottom:1px solid #e9e9e4}
+.benefit{padding:20px 14px}
+.benefit .ico{background:#fff4b8;color:#292929;border-radius:5px}
+.benefit b,.section-title h2,.cat-copy h3,.product-info h3,.slat h3,.model-copy h3,.contact-box h3,.about-flex h2{color:#202020}
+section{padding:60px 0}
+.section-title{margin-bottom:28px}
+.section-title h2{font-size:clamp(23px,3vw,31px);letter-spacing:-.5px}
+.section-title p{font-size:13px}
+.section-title a{color:#7d6200}
+.categories,.slats,.contact{background:#f7f7f4}
+.cat-grid,.products-grid{gap:18px}
+.cat,.product,.model-card,.contact-box{border:1px solid #e7e5dc;border-radius:7px;box-shadow:0 4px 15px #00000004}
+.cat:hover,.product:hover{box-shadow:0 14px 30px #00000012}
+.cat-img{background:#f2f0e7}
+.cat-copy{padding:16px}
+.cat-copy h3,.product-info h3{font-size:14px}
+.product-img{background:#f7f7f4}
+.label{background:#f2c400;color:#202020;border-radius:3px}
+.price{color:#6c5500}
+.mini-btn{background:#202020;color:#fff;border-radius:4px}
+.slat-photo{border-radius:7px}
+.slat{border-radius:7px}
+.model-card{border-radius:7px}
+.model-art{background:linear-gradient(135deg,#f7f7f4,#e9e4ce)}
+.model-tip{background:#fff9d9;border-right-color:#f2c400;color:#4a4636}
+.area{background:#202020!important;color:#fff}
+.area:nth-child(2){background:#fff!important;color:#242424;border:1px solid #e7e5dc}
+.area li:before{color:#f2c400}
+.about-band{background:#fff}
+.about-flex h2 span{color:#8a6900}
+.contact-box{padding:26px}
+.phone{border:1px solid #e4e1d5;border-radius:5px;color:#202020}
+footer{background:#202020;color:#ddd}
+footer b{color:#f2c400}
+.mobile-call{background:#f2c400;color:#202020}
+@media(max-width:850px){.hero-grid{gap:28px;padding:42px 0}.navrow .container{gap:20px}}
+@media(max-width:560px){.hero-grid{padding:32px 0}.hero-visual{min-height:245px}.shutter-door{height:170px}.section-title h2{font-size:22px}.head-main{gap:10px}.logo{font-size:23px}}
+
 </style>
 </head>
 <body>
@@ -47,7 +122,7 @@ footer{background:#fff8d8;color:#49422b;padding:25px 0;text-align:center;font-si
 <div style="background:#fff;border-bottom:1px solid var(--line);font-size:12px;color:var(--navy)"><div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 0"><span>✓ مشاوره انتخاب موتور و تیغه</span><span>✓ معرفی تجهیزات و قطعات کرکره برقی</span><span>✓ هماهنگی نصب در تهران و حومه</span><span>✓ نصب و تعمیر در اسلامشهر</span></div></div>
 <main>
 <section class="hero" id="home"><div class="container hero-grid">
- <div><span class="badge">فروشگاه تجهیزات کرکره برقی و درب اتوماتیک</span><h1><span class="brand-name">کرکره برقی و درب اتوماتیک آترول</span><span class="person-name">محمدحسین تاجیک</span></h1><p>مجموعه آترول با مدیریت <strong>محمدحسین تاجیک</strong>؛ ارائه خدمات <strong>نصب کرکره برقی در تهران و حومه</strong>، <strong>نصب و تعمیر کرکره برقی در اسلامشهر</strong>، معرفی و فروش موتور، ریموت، تیغه و قطعات کرکره برقی و مشاوره انتخاب مدل مناسب.</p><div class="actions"><a class="btn btn-red" href="tel:09121487861">📞 تماس و استعلام قیمت</a><a class="btn btn-white" href="#products">مشاهده دسته‌بندی محصولات</a></div><div class="hero-points"><span>مشاوره پیش از خرید</span><span>تماس مستقیم</span><span>معرفی انواع تجهیزات</span></div></div>
+ <div><span class="badge">تجهیزات تخصصی • نصب و خدمات</span><h1><span class="brand-name">کرکره برقی و درب اتوماتیک آترول</span><span class="person-name">محمد حسین تاجیک</span></h1><p>مجموعه آترول با مدیریت <strong>محمد حسین تاجیک</strong>؛ ارائه خدمات <strong>نصب کرکره برقی در تهران و حومه</strong>، <strong>نصب و تعمیر کرکره برقی در اسلامشهر</strong>، معرفی و فروش موتور، ریموت، تیغه و قطعات کرکره برقی و مشاوره انتخاب مدل مناسب.</p><div class="actions"><a class="btn btn-red" href="tel:09121487861">📞 تماس و استعلام قیمت</a><a class="btn btn-white" href="#products">مشاهده دسته‌بندی محصولات</a></div><div class="hero-points"><span>مشاوره پیش از خرید</span><span>تماس مستقیم</span><span>معرفی انواع تجهیزات</span></div></div>
  <div class="hero-visual"><div class="shutter-scene" role="img" aria-label="تصویر نمایشی کرکره برقی فلزی"><div class="scene-top"><span>نمونه نمایشی</span><span>کرکره برقی</span></div><div class="shutter-door"></div><div class="floor"></div></div><div class="floating float-a">خدمات تخصصی<b>کرکره برقی</b></div><div class="floating float-b">تماس مستقیم<b>۰۹۱۲۱۴۸۷۸۶۱</b></div></div>
 </div></section>
 <div class="benefits"><div class="container benefit-grid"><div class="benefit"><span class="ico">⚙</span><div><b>موتور و تجهیزات</b><small>مشاوره برای انتخاب مناسب</small></div></div><div class="benefit"><span class="ico">▤</span><div><b>انواع تیغه کرکره</b><small>معرفی مدل و رنگ</small></div></div><div class="benefit"><span class="ico">⌂</span><div><b>نصب در تهران</b><small>تهران، چیتگر و حومه</small></div></div><div class="benefit"><span class="ico">🛠</span><div><b>تعمیر در اسلامشهر</b><small>هماهنگی تلفنی</small></div></div></div></div>

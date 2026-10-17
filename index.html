@@ -1,89 +1,817 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATROLL | درب اتوماتیک و کرکره برقی</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Tahoma, 'Segoe UI', sans-serif;
-        }
-        body {
-            background-color: #f8fafc;
-            color: #1e293b;
+    <meta name="theme-color" content="#101b35"><title>آترول | نصب کرکره برقی تهران و تعمیر کرکره برقی اسلامشهر</title>
+
+<meta name="description" content="آترول، خدمات نصب کرکره برقی در تهران و حومه، نصب و تعمیر کرکره برقی در اسلامشهر، فروش موتور کرکره برقی، ریموت و قطعات. تماس با محمد حسین تاجیک.">
+
+<meta name="keywords" content="نصب کرکره برقی تهران, کرکره برقی اسلامشهر, تعمیر کرکره برقی اسلامشهر, فروش موتور کرکره برقی, خرید ریموت کرکره برقی, تیغه کرکره برقی, آترول, محمد حسین تاجیک">
+
+<meta name="robots" content="index, follow">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Tahoma, Arial, sans-serif;
+        background: #f4f6fa;
+        color: #172033;
+        line-height: 1.9;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .top-bar {
+        background: #0c1428;
+        color: #fff;
+        text-align: center;
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .top-bar span {
+        color: #ff3648;
+        font-weight: bold;
+    }
+
+    header {
+        background: #101b35;
+        color: white;
+        padding: 18px 16px 30px;
+        border-bottom: 4px solid #e6293e;
+    }
+
+    .header-inner {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .logo span {
+        color: #ff3648;
+    }
+
+    .header-call {
+        background: #e6293e;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .hero {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 48px 24px;
+        background: linear-gradient(135deg, #101b35, #243c67);
+        color: white;
+        border-radius: 18px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 5px solid #e6293e;
+    }
+
+    .hero-label {
+        display: inline-block;
+        background: #e6293e;
+        padding: 5px 16px;
+        border-radius: 30px;
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+
+    .hero h1 {
+        font-size: clamp(25px, 5vw, 42px);
+        line-height: 1.8;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 span {
+        display: block;
+        color: #ff4355;
+    }
+
+    .hero p {
+        max-width: 720px;
+        margin: 12px auto 24px;
+        color: #e0e7f5;
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 9px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .btn-red {
+        background: #e6293e;
+        color: white;
+    }
+
+    .btn-white {
+        background: white;
+        color: #101b35;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .container {
+        width: 92%;
+        max-width: 1100px;
+        margin: 35px auto;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+        color: #101b35;
+        margin-bottom: 6px;
+    }
+
+    .section-title h2 span {
+        color: #e6293e;
+    }
+
+    .section-title p {
+        color: #64748b;
+        font-size: 13px;
+    }
+
+    .owner-card {
+        background: white;
+        border-radius: 15px;
+        padding: 24px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 5px 20px rgba(16, 27, 53, 0.05);
+        margin-bottom: 35px;
+    }
+
+    .owner-card .small-title {
+        color: #e6293e;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .owner-card h2 {
+        color: #101b35;
+        font-size: clamp(24px, 5vw, 36px);
+        margin: 7px 0;
+    }
+
+    .owner-card p {
+        color: #64748b;
+        font-size: 14px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 17px;
+    }
+
+    .service-card {
+        background: white;
+        border-radius: 13px;
+        padding: 23px 18px;
+        border: 1px solid #e5eaf2;
+        box-shadow: 0 4px 15px rgba(16, 27, 53, 0.04);
+        transition: 0.2s;
+    }
+
+    .service-card:hover {
+        border-color: #e6293e;
+        transform: translateY(-3px);
+    }
+
+    .service-icon {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .service-card h3 {
+        color: #101b35;
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .service-card p {
+        color: #64748b;
+        font-size: 13px;
+    }
+
+    .service-card a {
+        display: inline-block;
+        margin-top: 12px;
+        color: #e6293e;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .area-section {
+        background: #101b35;
+        color: white;
+        border-radius: 16px;
+        padding: 30px 22px;
+        margin: 35px 0;
+    }
+
+    .area-section h2 {
+        text-align: center;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .area-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+    }
+
+    .area-box {
+        border: 1px solid #405174;
+        border-radius: 12px;
+        padding: 20px;
+        background: #192847;
+    }
+
+    .area-box h3 {
+        color: #ff4355;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .area-box p {
+        font-size: 13px;
+        color: #e0e7f5;
+    }
+
+    .products {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        border: 1px solid #e2e8f0;
+        margin: 35px 0;
+    }
+
+    .products h2 {
+        color: #101b35;
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    .products p {
+        font-size: 14px;
+        color: #64748b;
+        margin-bottom: 15px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .product-tag {
+        background: #f0f3f8;
+        border-right: 3px solid #e6293e;
+        border-radius: 7px;
+        padding: 9px 13px;
+        color: #263754;
+        font-size: 13px;
+    }
+
+    .portfolio {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 35px 0;
+        border: 1px solid #e2e8f0;
+    }
+
+    .portfolio h2 {
+        text-align: center;
+        color: #101b35;
+        margin-bottom: 8px;
+    }
+
+    .portfolio-intro {
+        text-align: center;
+        color: #64748b;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .portfolio-item {
+        background: #f1f5f9;
+        border: 1px dashed #b8c4d6;
+        padding: 28px 15px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .portfolio-item .portfolio-icon {
+        font-size: 36px;
+    }
+
+    .portfolio-item h3 {
+        color: #101b35;
+        font-size: 15px;
+        margin: 8px 0;
+    }
+
+    .portfolio-item p {
+        color: #64748b;
+        font-size: 12px;
+    }
+
+    .portfolio-note {
+        color: #e6293e;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 18px;
+    }
+
+    .seo-text {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        border: 1px solid #e2e8f0;
+        margin: 35px 0;
+    }
+
+    .seo-text h2 {
+        color: #101b35;
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+    .seo-text h3 {
+        color: #243c67;
+        font-size: 16px;
+        margin: 18px 0 6px;
+    }
+
+    .seo-text p {
+        font-size: 13px;
+        color: #526079;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        background: linear-gradient(135deg, #101b35, #243c67);
+        color: white;
+        padding: 32px 20px;
+        text-align: center;
+        border-radius: 16px;
+        margin: 35px 0;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .contact p {
+        font-size: 14px;
+        color: #e0e7f5;
+        margin-bottom: 20px;
+    }
+
+    .phone-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .phone-link {
+        display: inline-block;
+        background: #e6293e;
+        color: white;
+        padding: 13px 18px;
+        border-radius: 9px;
+        font-size: 15px;
+        font-weight: bold;
+        direction: ltr;
+    }
+
+    footer {
+        background: #0c1428;
+        color: #cbd5e1;
+        text-align: center;
+        padding: 25px 15px;
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+    footer strong {
+        color: white;
+        font-size: 17px;
+    }
+
+    footer .footer-brand {
+        color: #ff4355;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .sticky-call {
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        .header-inner {
+            justify-content: center;
             text-align: center;
-            padding: 30px 15px;
         }
+
+        .hero {
+            margin: 18px 12px;
+            padding: 32px 16px;
+        }
+
+        .hero p {
+            font-size: 13px;
+        }
+
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 30px 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            width: 94%;
+            margin: 25px auto;
         }
-        h1 {
-            color: #0f172a;
-            font-size: 26px;
-            margin-bottom: 10px;
+
+        .section-title h2 {
+            font-size: 21px;
         }
-        .subtitle {
-            color: #64748b;
-            font-size: 15px;
-            margin-bottom: 25px;
+
+        .owner-card {
+            padding: 20px 12px;
         }
-        .services {
-            text-align: right;
-            background: #f1f5f9;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
+
+        .contact h2 {
+            font-size: 22px;
         }
-        .services h2 {
-            font-size: 17px;
-            margin-bottom: 12px;
-            color: #334155;
+
+        body {
+            padding-bottom: 62px;
         }
-        .services ul {
-            list-style: none;
-            padding-right: 5px;
+
+        .sticky-call {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: #e6293e;
+            justify-content: center;
+            padding: 12px;
+            box-shadow: 0 -3px 12px rgba(0,0,0,0.15);
         }
-        .services li {
-            padding: 6px 0;
-            font-size: 14px;
-            color: #475569;
-        }
-        .btn-call {
-            display: inline-block;
-            background-color: #2563eb;
+
+        .sticky-call a {
             color: white;
-            text-decoration: none;
-            padding: 12px 28px;
-            border-radius: 8px;
             font-weight: bold;
             font-size: 15px;
-            transition: 0.2s;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>برند ATROLL</h1>
-        <p class="subtitle">تولید، نصب و خدمات انواع کرکره برقی و درب اتوماتیک</p>
-        
-        <div class="services">
-            <h2>خدمات و محصولات ما:</h2>
-            <ul>
-                <li>✔ کرکره برقی، تیغه‌های آلومینیومی و پانچ</li>
-                <li>✔ درب‌های اتوماتیک و شیشه سکوریت</li>
-                <li>✔ سایبان برقی و هوشمندسازی ساختمان</li>
-            </ul>
-        </div>
+    }
+</style>
 
-        <a href="tel:09121487861" class="btn-call">تماس با کارشناس: ۰۹۱۲۱۴۸۷۸۶۱</a>
+</head><body><div class="top-bar">
+    خدمات کرکره برقی آترول | <span>تهران، حومه و اسلامشهر</span>
+</div>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">AT<span>ROLL</span></div>
+        <a href="#contact" class="header-call">تماس و سفارش خدمات</a>
     </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-label">کیفیت، تخصص و اطمینان</div>
+
+        <h1>
+            نصب و خدمات تخصصی
+            <span>کرکره برقی آترول</span>
+        </h1>
+
+        <p>
+            ارائه خدمات نصب کرکره برقی در تهران و حومه،
+            نصب و تعمیر کرکره برقی در اسلامشهر و معرفی محصولات
+            و قطعات موردنیاز کرکره برقی.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="tel:09121487861" class="btn btn-red">
+                ☎ تماس مستقیم
+            </a>
+
+            <a href="#services" class="btn btn-white">
+                مشاهده خدمات
+            </a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <section class="owner-card">
+            <div class="small-title">مدیریت و مسئولیت خدمات آترول</div>
+
+            <h2>محمد حسین تاجیک</h2>
+
+            <p>
+                همراه شما برای انتخاب، نصب و خدمات کرکره برقی
+                با توجه به نیاز پروژه و محل اجرا.
+            </p>
+        </section>
+
+        <section id="services">
+            <div class="section-title">
+                <h2>خدمات تخصصی <span>آترول</span></h2>
+                <p>برای انتخاب خدمات موردنیاز خود اقدام کنید.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">🏪</div>
+                    <h3>نصب کرکره برقی</h3>
+                    <p>
+                        نصب کرکره برقی برای مغازه، فروشگاه،
+                        پارکینگ و ورودی ساختمان در تهران و حومه.
+                    </p>
+                    <a href="tel:09121487861">استعلام و سفارش ←</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>تعمیر کرکره برقی اسلامشهر</h3>
+                    <p>
+                        پیگیری درخواست تعمیر کرکره برقی
+                        و بررسی مشکلات فنی در محدوده اسلامشهر.
+                    </p>
+                    <a href="tel:09126961504">تماس برای تعمیر ←</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>موتور کرکره برقی</h3>
+                    <p>
+                        معرفی و فروش موتور کرکره برقی متناسب
+                        با نوع کاربری، وزن و ابعاد کرکره.
+                    </p>
+                    <a href="tel:09121487861">مشاوره خرید موتور ←</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🎛️</div>
+                    <h3>ریموت و قطعات</h3>
+                    <p>
+                        معرفی ریموت، گیرنده و قطعات موردنیاز
+                        برای راه‌اندازی و استفاده از کرکره برقی.
+                    </p>
+                    <a href="tel:09121487861">استعلام قیمت قطعات ←</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>تیغه کرکره برقی</h3>
+                    <p>
+                        راهنمایی برای انتخاب تیغه کرکره برقی
+                        با توجه به ابعاد دهانه و نوع استفاده.
+                    </p>
+                    <a href="tel:09121487861">دریافت مشاوره ←</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>مشاوره انتخاب محصول</h3>
+                    <p>
+                        راهنمایی برای انتخاب تجهیزات مناسب
+                        پیش از خرید و اجرای پروژه کرکره برقی.
+                    </p>
+                    <a href="tel:09121487861">ارتباط با آترول ←</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="area-section">
+            <h2>محدوده ارائه خدمات آترول</h2>
+
+            <div class="area-grid">
+
+                <div class="area-box">
+                    <h3>📍 تهران و حومه</h3>
+                    <p>
+                        ارائه خدمات نصب کرکره برقی برای
+                        مغازه‌ها، فروشگاه‌ها، پارکینگ‌ها
+                        و ساختمان‌ها.
+                    </p>
+                </div>
+
+                <div class="area-box">
+                    <h3>📍 اسلامشهر</h3>
+                    <p>
+                        ارائه خدمات نصب و تعمیر کرکره برقی
+                        در محدوده اسلامشهر.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>محصولات کرکره برقی آترول</h2>
+
+            <p>
+                برای اطلاع از موجودی و قیمت روز محصولات،
+                با ما تماس بگیرید.
+            </p>
+
+            <div class="product-list">
+                <div class="product-tag">موتور کرکره برقی</div>
+                <div class="product-tag">ریموت کرکره برقی</div>
+                <div class="product-tag">تیغه آلومینیومی</div>
+                <div class="product-tag">تیغه پانچ</div>
+                <div class="product-tag">گیرنده و کنترل</div>
+                <div class="product-tag">لوازم و قطعات کرکره</div>
+            </div>
+
+            <br>
+
+            <a href="tel:09121487861" class="btn btn-red">
+                استعلام قیمت و خرید
+            </a>
+        </section>
+
+        <section class="portfolio">
+            <h2>نمونه کارهای نصب کرکره برقی</h2>
+
+            <p class="portfolio-intro">
+                تصاویر پروژه‌های اجراشده را در این قسمت قرار دهید.
+            </p>
+
+            <div class="portfolio-grid">
+
+                <div class="portfolio-item">
+                    <div class="portfolio-icon">📸</div>
+                    <h3>نصب کرکره برقی مغازه</h3>
+                    <p>تصویر واقعی پروژه خود را اضافه کنید.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-icon">📸</div>
+                    <h3>نصب کرکره برقی پارکینگ</h3>
+                    <p>تصویر واقعی پروژه خود را اضافه کنید.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-icon">📸</div>
+                    <h3>اجرای پروژه در اسلامشهر</h3>
+                    <p>تصویر واقعی پروژه خود را اضافه کنید.</p>
+                </div>
+
+            </div>
+
+            <p class="portfolio-note">
+                نکته: این قسمت فعلاً جایگاه تصاویر است و هنوز عکس واقعی پروژه در آن قرار نگرفته است.
+            </p>
+        </section>
+
+        <section class="seo-text">
+            <h2>نصب کرکره برقی در تهران و حومه</h2>
+
+            <p>
+                اگر برای مغازه، پارکینگ یا ورودی ساختمان خود
+                به دنبال نصب کرکره برقی در تهران و حومه هستید،
+                آترول آماده دریافت درخواست شما و ارائه مشاوره
+                برای انتخاب تجهیزات متناسب با پروژه است.
+            </p>
+
+            <h3>تعمیر کرکره برقی در اسلامشهر</h3>
+
+            <p>
+                برای درخواست تعمیر کرکره برقی در اسلامشهر،
+                بررسی مشکل موتور، عملکرد کرکره یا سایر قطعات،
+                می‌توانید با مجموعه آترول تماس بگیرید و
+                جزئیات مشکل خود را اعلام کنید.
+            </p>
+
+            <h3>خرید موتور و ریموت کرکره برقی</h3>
+
+            <p>
+                هنگام خرید موتور کرکره برقی، باید به وزن و
+                ابعاد کرکره، نوع کاربری و مشخصات فنی تجهیزات
+                توجه کرد. برای اطلاع از قیمت موتور کرکره برقی،
+                خرید ریموت و استعلام موجودی قطعات با آترول
+                ارتباط بگیرید.
+            </p>
+
+            <h3>ارتباط با محمد حسین تاجیک</h3>
+
+            <p>
+                برای دریافت اطلاعات خدمات نصب کرکره برقی در تهران،
+                خدمات نصب و تعمیر در اسلامشهر و خرید محصولات
+                مرتبط با کرکره برقی، با شماره‌های تماس درج‌شده
+                در وب‌سایت ارتباط بگیرید.
+            </p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>برای مشاوره و سفارش تماس بگیرید</h2>
+
+            <p>
+                آترول | محمد حسین تاجیک
+                <br>
+                نصب کرکره برقی در تهران و حومه،
+                نصب و تعمیر در اسلامشهر
+            </p>
+
+            <div class="phone-list">
+                <a href="tel:09121487861" class="phone-link">
+                    09121487861
+                </a>
+
+                <a href="tel:09126961504" class="phone-link">
+                    09126961504
+                </a>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer-brand">ATROLL</div>
+
+    <strong>محمد حسین تاجیک</strong>
+
+    <p>
+        خدمات نصب کرکره برقی تهران و حومه
+        | نصب و تعمیر کرکره برقی اسلامشهر
+    </p>
+
+    <p>
+        © تمامی حقوق این وب‌سایت محفوظ است.
+    </p>
+</footer>
+
+<div class="sticky-call">
+    <a href="tel:09121487861">
+        ☎ تماس مستقیم با آترول
+    </a>
+</div>
+
 </body>
 </html>

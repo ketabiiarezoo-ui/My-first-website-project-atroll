@@ -1,154 +1,82 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101c35">
-  <meta name="description" content="آترول؛ نصب کرکره برقی در تهران، چیتگر و حومه و نصب و تعمیر کرکره برقی در اسلامشهر. فروش موتور، ریموت و قطعات کرکره برقی با مشاوره و استعلام قیمت.">
-  <meta name="keywords" content="نصب کرکره برقی تهران، کرکره برقی چیتگر، نصب کرکره برقی اسلامشهر، تعمیر کرکره برقی اسلامشهر، فروش موتور کرکره برقی، ریموت کرکره برقی، قطعات کرکره برقی، آترول، استاد تاجیک">
-  <meta property="og:title" content="آترول | نصب کرکره برقی در تهران و اسلامشهر">
-  <meta property="og:description" content="نصب کرکره برقی در تهران و حومه؛ نصب و تعمیر در اسلامشهر. فروش موتور، ریموت و قطعات.">
-  <title>آترول | نصب کرکره برقی در تهران، چیتگر و اسلامشهر</title>
-  <style>
-    :root{--navy:#101c35;--navy2:#182b4e;--red:#e63946;--white:#fff;--ink:#182235;--muted:#64748b;--light:#f3f6fb;--line:#e3e8f0}
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:88px}
-    body{font-family:Tahoma,"Segoe UI",sans-serif;background:var(--white);color:var(--ink);line-height:1.9}
-    a{color:inherit;text-decoration:none}
-    .wrap{width:min(1120px,92%);margin:auto}
-    .topbar{background:var(--red);color:#fff;text-align:center;padding:7px 12px;font-size:13px;font-weight:bold}
-    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 5px 22px #0b17332b}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}
-    .brand{font-size:27px;font-weight:900;letter-spacing:1px}.brand span{color:var(--red)}
-    .navlinks{display:flex;gap:22px;align-items:center;font-size:14px}.navlinks a:hover{color:#ff6873}
-    .nav-cta,.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:9px;padding:11px 17px;font-weight:bold}
-    .nav-cta,.btn-red{background:var(--red);color:#fff}.btn-light{background:#fff;color:var(--navy)}.btn-outline{border:1px solid #ffffff70;color:#fff}
-    .hero{background:radial-gradient(ellipse at 12% 20%,#2a4168 0,transparent 38%),linear-gradient(125deg,#0c162b,#182b4e 72%,#253b60);color:#fff;position:relative;overflow:hidden}
-    .hero:after{content:"";position:absolute;width:310px;height:310px;border:45px solid #ffffff0b;border-radius:50%;left:-110px;bottom:-160px}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:44px;padding:72px 0 78px;position:relative;z-index:1}
-    .eyebrow{display:inline-block;border:1px solid #ffffff45;background:#ffffff0b;border-radius:40px;padding:5px 13px;color:#ffdce0;font-size:13px;margin-bottom:18px}
-    h1{font-size:clamp(30px,4.3vw,49px);line-height:1.55;margin-bottom:16px;font-weight:900}
-    h1 .accent{color:#ff5966;display:block}
-    .hero p{font-size:16px;color:#e0e8f5;max-width:620px;margin-bottom:24px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
-    .hero-note{font-size:12px!important;color:#c4d0e3!important;margin:18px 0 0!important}
-    .hero-card{background:#fff;color:var(--ink);border-radius:20px;padding:27px;box-shadow:0 25px 65px #0004;transform:rotate(-1deg)}
-    .hero-card h2{font-size:20px;color:var(--navy);margin-bottom:15px}
-    .quick-item{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
-    .quick-item:last-child{border-bottom:0}.icon{width:38px;height:38px;display:grid;place-items:center;background:#fff0f1;color:var(--red);border-radius:10px;flex-shrink:0;font-size:19px}
-    .quick-item b{display:block;font-size:14px}.quick-item small{color:var(--muted);font-size:12px}
-    section{padding:68px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 34px}.section-head .kicker{color:var(--red);font-size:13px;font-weight:bold}.section-head h2{font-size:clamp(24px,3vw,34px);color:var(--navy);line-height:1.6;margin:5px 0 8px}.section-head p{color:var(--muted);font-size:14px}
-    .services{background:var(--light)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;transition:transform .2s,box-shadow .2s}
-    .card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #12264b12}
-    .card .icon{width:48px;height:48px;font-size:23px;margin-bottom:12px}.card h3{font-size:17px;color:var(--navy);margin-bottom:7px}.card p{font-size:13px;color:var(--muted)}
-    .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
-    .area-box{border-radius:16px;padding:27px;background:var(--navy);color:#fff}.area-box h3{font-size:20px;margin-bottom:12px}.area-box p{color:#d6dfed;font-size:14px;margin-bottom:13px}.area-box ul{list-style:none}.area-box li{padding:5px 0;font-size:14px}.area-box li:before{content:"✓";color:#ff6873;font-weight:bold;margin-left:9px}
-    .area-box.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}.area-box.alt h3{color:var(--navy)}.area-box.alt p{color:var(--muted)}
-    .projects{background:var(--light)}
-    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .project{border-radius:15px;overflow:hidden;background:#fff;border:1px solid var(--line)}
-    .project-art{height:145px;background:linear-gradient(135deg,#152746,#334b70);display:grid;place-items:center;color:#fff;font-size:42px;position:relative}
-    .project-art:after{content:"ATROLL";position:absolute;bottom:9px;left:12px;font-size:11px;letter-spacing:2px;color:#ffffff80;font-weight:bold}
-    .project-copy{padding:17px}.project-copy h3{font-size:16px;color:var(--navy);margin-bottom:5px}.project-copy p{font-size:13px;color:var(--muted)}
-    .name-band{background:var(--navy);color:#fff;padding:35px 0}.name-flex{display:flex;justify-content:space-between;align-items:center;gap:20px}.name-band small{color:#c5d1e4}.name-band h2{font-size:clamp(24px,4vw,38px);color:#fff;line-height:1.5}.name-band h2 span{color:#ff5966}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:start}
-    .contact-panel{background:var(--light);border-radius:16px;padding:25px}.contact-panel h3{font-size:20px;color:var(--navy);margin-bottom:10px}.contact-panel p{font-size:14px;color:var(--muted);margin-bottom:14px}
-    .phone-link{display:block;background:#fff;border:1px solid var(--line);padding:13px 15px;border-radius:10px;font-size:18px;font-weight:bold;color:var(--navy);margin:10px 0;direction:ltr;text-align:center}
-    .contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}.social{color:var(--red);font-weight:bold}
-    footer{background:#0a1325;color:#c4cfe0;padding:24px 0;text-align:center;font-size:12px}footer b{color:#fff}
-    .mobile-bar{display:none}
-    @media(max-width:800px){.nav{min-height:68px}.navlinks{gap:12px;font-size:12px}.nav-cta{display:none}.hero-grid{grid-template-columns:1fr;padding:48px 0;gap:28px}.hero-card{transform:none}.cards{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){body{padding-bottom:62px}.nav{min-height:62px}.brand{font-size:24px}.navlinks{gap:10px;font-size:11px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.hero-grid{padding:40px 0 48px}h1{font-size:30px}.hero p{font-size:14px}.hero-actions .btn{width:100%}section{padding:48px 0}.cards,.project-grid,.area-grid,.contact-grid{grid-template-columns:1fr}.card{padding:20px}.project-art{height:125px}.name-flex{align-items:flex-start;flex-direction:column}.name-band{padding:28px 0}.mobile-bar{display:flex;position:fixed;bottom:0;right:0;left:0;z-index:20;background:#fff;padding:8px;gap:8px;box-shadow:0 -4px 20px #10203b22}.mobile-bar a{flex:1;text-align:center;padding:9px 4px;border-radius:8px;font-size:13px;font-weight:bold}.mobile-call{background:var(--red);color:#fff}}
-  </style>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"آترول - تاجیک","telephone":["+989121487861","+989126961504"],"url":"https://ketabiiarezoo-ui.github.io/My-first-website-project-atroll/","areaServed":["تهران","چیتگر","اسلامشهر"],"description":"نصب کرکره برقی در تهران و حومه؛ نصب و تعمیر کرکره برقی در اسلامشهر و فروش موتور، ریموت و قطعات."}
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10213d">
+<meta name="description" content="آترول، محمد حسین تاجیک؛ نصب کرکره برقی در تهران و حومه، نصب و تعمیر در اسلامشهر، معرفی و فروش موتور، ریموت، تیغه و قطعات کرکره برقی. تماس مستقیم برای مشاوره و استعلام قیمت.">
+<meta name="keywords" content="کرکره برقی، نصب کرکره برقی تهران، کرکره برقی اسلامشهر، تعمیر کرکره برقی اسلامشهر، تیغه کرکره برقی، موتور کرکره برقی، ریموت کرکره برقی، آترول، محمد حسین تاجیک">
+<meta property="og:title" content="آترول | مرجع خدمات و تجهیزات کرکره برقی">
+<meta property="og:description" content="نصب کرکره برقی در تهران و حومه؛ نصب و تعمیر در اسلامشهر. معرفی تیغه، موتور، ریموت و قطعات.">
+<title>آترول | نصب کرکره برقی، تیغه و موتور در تهران و اسلامشهر</title>
+<style>
+:root{--navy:#10213d;--navy2:#1b3459;--red:#df3344;--ink:#202b3c;--muted:#68778d;--bg:#f4f6f9;--line:#e5e9f0;--white:#fff;--green:#17834d}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:120px}body{font-family:Tahoma,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.85}a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1180px,94%);margin:auto}
+.topline{background:#0b172c;color:#dce5f2;font-size:12px;padding:7px 0}.topline .container{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 3px 18px #10213d12}.head-main{display:flex;align-items:center;gap:22px;padding:15px 0}.logo{font-size:30px;font-weight:1000;letter-spacing:1px;color:var(--navy);white-space:nowrap}.logo span{color:var(--red)}.tag{font-size:11px;color:var(--muted);display:block;line-height:1.4}
+.search{flex:1;display:flex;border:1px solid #dce2eb;background:#f7f8fa;border-radius:10px;overflow:hidden;min-width:130px}.search input{width:100%;border:0;outline:0;background:transparent;padding:11px 14px;font-size:13px}.search button{border:0;background:var(--red);color:#fff;padding:0 17px;cursor:pointer}.head-call{background:var(--navy);color:#fff;border-radius:9px;padding:10px 14px;font-size:13px;font-weight:bold;white-space:nowrap}
+.navrow{border-top:1px solid var(--line)}.navrow .container{display:flex;gap:26px;align-items:center;overflow:auto;white-space:nowrap;padding:10px 0;font-size:13px}.navrow a:hover{color:var(--red)}.navrow .highlight{color:var(--red);font-weight:bold}
+.hero{background:linear-gradient(115deg,#0c192f 0%,#18365e 65%,#25496f 100%);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center;padding:48px 0}.badge{display:inline-block;border:1px solid #ffffff3d;color:#ffdfe2;border-radius:30px;padding:4px 12px;font-size:12px;margin-bottom:13px}.hero h1{font-size:clamp(28px,4vw,45px);line-height:1.55;margin-bottom:13px}.hero h1 span{color:#ff6571}.hero p{color:#e0e8f3;font-size:15px;max-width:620px;margin-bottom:20px}.actions{display:flex;flex-wrap:wrap;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:11px 18px;font-size:13px;font-weight:bold}.btn-red{background:var(--red);color:#fff}.btn-white{background:#fff;color:var(--navy)}.hero-points{display:flex;flex-wrap:wrap;gap:15px;margin-top:20px;color:#d8e3f1;font-size:12px}.hero-points span:before{content:"✓";color:#ff6974;margin-left:6px;font-weight:bold}
+.hero-visual{position:relative;min-height:310px;display:flex;align-items:center;justify-content:center}.shutter-scene{width:100%;max-width:490px;border:8px solid #ffffff1b;border-radius:18px;overflow:hidden;background:linear-gradient(#dce8f1 0 45%,#aebdcc 45% 47%,#172942 47%);box-shadow:0 22px 60px #0005}.scene-top{height:48px;background:linear-gradient(90deg,#e8eef3,#b9c7d5,#eef3f6);display:flex;align-items:center;justify-content:space-between;padding:0 18px;color:#24344a;font-size:12px;font-weight:bold}.shutter-door{height:230px;margin:0 34px;background:repeating-linear-gradient(to bottom,#c7d0d9 0,#e6ebf0 5px,#8f9cab 7px,#c6d0da 10px);border:7px solid #7c8b9b;box-shadow:inset 0 0 18px #26384b55}.floor{height:18px;background:linear-gradient(#68778b,#28374a)}.floating{position:absolute;background:#fff;color:var(--navy);border-radius:12px;padding:10px 13px;box-shadow:0 12px 35px #0003;font-size:12px;font-weight:bold}.float-a{top:15px;right:0}.float-b{bottom:20px;left:0}.floating b{display:block;color:var(--red);font-size:15px}
+.benefits{border-bottom:1px solid var(--line);background:#fff}.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.benefit{padding:18px 12px;display:flex;align-items:center;gap:11px;border-left:1px solid var(--line)}.benefit:last-child{border-left:0}.benefit .ico{background:#fff0f1;color:var(--red);width:40px;height:40px;display:grid;place-items:center;border-radius:10px;font-size:20px;flex-shrink:0}.benefit b{display:block;font-size:13px;color:var(--navy)}.benefit small{display:block;font-size:11px;color:var(--muted)}
+section{padding:54px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:25px}.section-title h2{font-size:clamp(22px,3vw,30px);color:var(--navy);line-height:1.5}.section-title p{font-size:12px;color:var(--muted);margin-top:4px}.section-title a{font-size:12px;color:var(--red);font-weight:bold;white-space:nowrap}
+.categories{background:var(--bg)}.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.cat{background:#fff;border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:.2s}.cat:hover,.product:hover{transform:translateY(-4px);box-shadow:0 12px 26px #132b4b13}.cat-img{height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#eef2f6,#dce4ed);padding:15px}.cat-img svg{width:100%;height:100%;max-width:220px}.cat-copy{padding:13px 15px}.cat-copy h3{font-size:14px;color:var(--navy);margin-bottom:3px}.cat-copy p{font-size:11px;color:var(--muted)}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff;transition:.2s}.product-img{height:175px;background:#f3f6f9;display:grid;place-items:center;padding:16px;position:relative}.product-img img{width:100%;height:100%;object-fit:contain}.product-img svg{width:100%;height:100%}.label{position:absolute;top:10px;right:10px;background:#fff0f1;color:var(--red);padding:3px 8px;border-radius:5px;font-size:10px;font-weight:bold}.product-info{padding:14px}.product-info h3{font-size:13px;color:var(--navy);margin-bottom:5px}.product-info p{font-size:11px;color:var(--muted);min-height:42px}.product-bottom{border-top:1px solid var(--line);margin-top:12px;padding-top:10px;display:flex;justify-content:space-between;align-items:center;gap:8px}.price{font-size:11px;font-weight:bold;color:var(--red)}.mini-btn{font-size:11px;background:var(--navy);color:#fff;padding:6px 9px;border-radius:6px}
+.slats{background:var(--bg)}.slat-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:stretch}.slat-photo{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;min-height:275px}.slat-photo img{width:100%;height:100%;min-height:275px;object-fit:cover}.slat-details{display:grid;grid-template-columns:1fr 1fr;gap:12px}.slat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.slat-swatch{height:48px;border-radius:7px;margin-bottom:10px;background:repeating-linear-gradient(to bottom,#c9cdd2 0,#edf0f2 5px,#9ca5af 7px,#d7dce1 10px);border:1px solid #c4ccd5}.slat:nth-child(2) .slat-swatch{background:repeating-linear-gradient(to bottom,#f8f8f5 0,#fff 5px,#c8ccd1 7px,#f0f1ef 10px)}.slat:nth-child(3) .slat-swatch{background:repeating-linear-gradient(to bottom,#292f37 0,#5c6672 5px,#171c23 7px,#414a54 10px)}.slat:nth-child(4) .slat-swatch{background:repeating-linear-gradient(to bottom,#a7794e 0,#d4b18b 5px,#875e3a 7px,#c59a6c 10px)}.slat h3{font-size:13px;color:var(--navy)}.slat p{font-size:11px;color:var(--muted);margin-top:4px}
+.areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.area{border-radius:14px;padding:24px;background:var(--navy);color:#fff}.area:nth-child(2){background:#f5f7fa;color:var(--ink);border:1px solid var(--line)}.area h3{font-size:19px;margin-bottom:7px}.area p{font-size:13px;opacity:.82}.area ul{margin-top:12px;list-style:none;font-size:12px}.area li:before{content:"✓";color:#ff6571;margin-left:8px}
+.about-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about-flex{display:flex;justify-content:space-between;align-items:center;gap:20px}.about-flex h2{font-size:clamp(24px,4vw,38px);color:var(--navy)}.about-flex h2 span{color:var(--red)}.about-flex p{font-size:12px;color:var(--muted)}
+.contact{background:var(--bg)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:23px}.contact-box h3{font-size:18px;color:var(--navy);margin-bottom:8px}.contact-box p{font-size:12px;color:var(--muted);margin-bottom:12px}.phone{display:block;direction:ltr;text-align:center;border:1px solid var(--line);padding:11px;border-radius:9px;margin:9px 0;font-weight:bold;color:var(--navy);font-size:18px}.address{font-size:13px!important;color:var(--ink)!important}
+footer{background:#0b172b;color:#bdc9d9;padding:25px 0;text-align:center;font-size:11px}footer b{color:#fff;font-size:14px}
+.mobile-call{display:none}
+@media(max-width:850px){.head-main{gap:12px}.tag{display:none}.hero-grid{gap:20px}.benefit-grid{grid-template-columns:repeat(2,1fr)}.benefit:nth-child(2){border-left:0}.cat-grid,.products-grid{grid-template-columns:repeat(2,1fr)}.slat-layout{grid-template-columns:1fr}.slat-photo{max-height:260px}.navrow .container{gap:18px}}
+@media(max-width:560px){body{padding-bottom:62px}.topline .container{justify-content:center}.head-main{flex-wrap:wrap;padding:10px 0}.logo{font-size:25px}.search{order:3;flex-basis:100%}.head-call{margin-right:auto;padding:8px 10px;font-size:11px}.navrow .container{gap:20px;font-size:12px}.hero-grid{grid-template-columns:1fr;padding:35px 0}.hero h1{font-size:29px}.hero p{font-size:13px}.hero-visual{min-height:245px}.shutter-door{height:170px;margin:0 25px}.scene-top{height:35px}.floating{font-size:10px}.benefit{padding:12px 5px;gap:7px}.benefit .ico{width:34px;height:34px}.benefit b{font-size:11px}.benefit small{font-size:10px}.section-title{align-items:flex-start}.section-title h2{font-size:22px}.cat-grid,.products-grid{gap:10px}.cat-img{height:115px}.product-img{height:140px}.cat-copy,.product-info{padding:10px}.product-info p{min-height:55px}.slat-details{gap:8px}.slat{padding:10px}.areas-grid,.contact-grid{grid-template-columns:1fr}.about-flex{align-items:flex-start;flex-direction:column}.mobile-call{display:block;position:fixed;z-index:60;bottom:0;right:0;left:0;background:var(--red);color:#fff;text-align:center;padding:12px;font-weight:bold;box-shadow:0 -4px 16px #10213d20}}
+</style>
 </head>
 <body>
-  <div class="topbar">آترول | نصب کرکره برقی در تهران و حومه • نصب و تعمیر در اسلامشهر</div>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#home" aria-label="آترول صفحه اصلی">ATRO<span>LL</span></a>
-      <nav class="navlinks" aria-label="منوی اصلی">
-        <a href="#services">خدمات</a><a href="#projects">نمونه‌کارها</a><a href="#about">درباره ما</a><a href="#contact">تماس</a>
-      </nav>
-      <a class="nav-cta" href="tel:09121487861">☎ تماس فوری</a>
-    </div>
-  </header>
-  <main>
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow">راهکار مطمئن برای ورودی ساختمان شما</span>
-          <h1>نصب کرکره برقی در تهران و حومه <span class="accent">آترول؛ کیفیت و اجرای حرفه‌ای</span></h1>
-          <p>برای نصب کرکره برقی، انتخاب موتور و تهیه ریموت و قطعات، با آترول تماس بگیرید. خدمات نصب در تهران، چیتگر و حومه؛ نصب و تعمیر کرکره برقی در اسلامشهر.</p>
-          <div class="hero-actions">
-            <a class="btn btn-red" href="tel:09121487861">📞 تماس با استاد تاجیک</a>
-            <a class="btn btn-outline" href="#services">مشاهده خدمات و محصولات</a>
-          </div>
-          <p class="hero-note">برای استعلام قیمت، نوع کار و محل پروژه را تلفنی اعلام کنید.</p>
-        </div>
-        <aside class="hero-card">
-          <h2>خدمات آترول در یک نگاه</h2>
-          <div class="quick-item"><span class="icon">▤</span><div><b>نصب کرکره برقی</b><small>تهران، چیتگر و حومه</small></div></div>
-          <div class="quick-item"><span class="icon">⚙</span><div><b>تعمیر کرکره برقی</b><small>ارائه خدمات نصب و تعمیر در اسلامشهر</small></div></div>
-          <div class="quick-item"><span class="icon">⌁</span><div><b>فروش موتور، ریموت و قطعات</b><small>برای انتخاب محصول مناسب مشاوره بگیرید</small></div></div>
-          <div class="quick-item"><span class="icon">☎</span><div><b>پاسخ‌گویی و استعلام قیمت</b><small>تماس مستقیم با مجموعه آترول</small></div></div>
-        </aside>
-      </div>
-    </section>
-    <section class="services" id="services">
-      <div class="wrap">
-        <div class="section-head"><span class="kicker">خدمات و محصولات</span><h2>خدمات کرکره برقی و تجهیزات آترول</h2><p>از انتخاب تجهیزات تا نصب، برای دریافت راهنمایی و استعلام قیمت با ما در ارتباط باشید.</p></div>
-        <div class="cards">
-          <article class="card"><span class="icon">▤</span><h3>نصب کرکره برقی</h3><p>نصب کرکره برقی برای مغازه، پارکینگ و ورودی‌های تجاری و مسکونی در تهران و حومه.</p></article>
-          <article class="card"><span class="icon">⚙</span><h3>تعمیر کرکره برقی</h3><p>بررسی و تعمیر کرکره برقی در محدوده اسلامشهر؛ برای هماهنگی، تماس بگیرید.</p></article>
-          <article class="card"><span class="icon">◉</span><h3>فروش موتور کرکره</h3><p>راهنمایی برای انتخاب موتور متناسب با وزن، ابعاد و نوع استفاده از کرکره.</p></article>
-          <article class="card"><span class="icon">⌁</span><h3>ریموت و قطعات</h3><p>استعلام موجودی و قیمت ریموت، قطعات و لوازم جانبی کرکره برقی.</p></article>
-          <article class="card"><span class="icon">▧</span><h3>مدل‌ها و تیغه‌های کرکره</h3><p>مشاوره برای انتخاب مدل و رنگ مناسب کرکره برقی با توجه به محل نصب.</p></article>
-          <article class="card"><span class="icon">⌂</span><h3>مشاوره پیش از خرید</h3><p>پیش از سفارش، درباره نوع موتور، تجهیزات و گزینه‌های مناسب پروژه خود سؤال کنید.</p></article>
-        </div>
-      </div>
-    </section>
-    <section id="areas">
-      <div class="wrap">
-        <div class="section-head"><span class="kicker">محدوده خدمات</span><h2>آترول در چه مناطقی خدمات ارائه می‌دهد؟</h2><p>برای هماهنگی زمان اجرا و بررسی محدوده پروژه، با ما تماس بگیرید.</p></div>
-        <div class="area-grid">
-          <div class="area-box"><h3>تهران، چیتگر و حومه</h3><p>تمرکز خدمات در تهران و مناطق اطراف برای اجرای پروژه‌های نصب کرکره برقی است.</p><ul><li>نصب کرکره برقی</li><li>مشاوره انتخاب موتور و تجهیزات</li><li>استعلام قیمت و هماهنگی اجرا</li></ul></div>
-          <div class="area-box alt"><h3>اسلامشهر</h3><p>در محدوده اسلامشهر، برای نصب یا تعمیر کرکره برقی می‌توانید با آترول هماهنگ کنید.</p><ul><li>نصب کرکره برقی</li><li>تعمیر کرکره برقی</li><li>مشاوره و بررسی نیاز پروژه</li></ul></div>
-        </div>
-      </div>
-    </section>
-    <section class="projects" id="projects">
-      <div class="wrap">
-        <div class="section-head"><span class="kicker">پروژه‌ها</span><h2>نمونه زمینه‌های اجرای کرکره برقی</h2><p>این بخش فعلاً معرفی نوع پروژه‌هاست؛ برای نمایش نمونه‌کار واقعی، عکس‌های اجرای خودتان را اضافه کنید.</p></div>
-        <div class="project-grid">
-          <article class="project"><div class="project-art">▤</div><div class="project-copy"><h3>کرکره برقی مغازه</h3><p>انتخاب و نصب کرکره برای ورودی واحدهای تجاری.</p></div></article>
-          <article class="project"><div class="project-art">⌂</div><div class="project-copy"><h3>کرکره برقی پارکینگ</h3><p>بررسی ابعاد و انتخاب تجهیزات مناسب برای پارکینگ.</p></div></article>
-          <article class="project"><div class="project-art">⚙</div><div class="project-copy"><h3>موتور و تجهیزات</h3><p>مشاوره برای تهیه موتور، ریموت و قطعات کرکره برقی.</p></div></article>
-        </div>
-      </div>
-    </section>
-    <section class="name-band" id="about">
-      <div class="wrap name-flex"><div><small>نامی که به خاطر می‌ماند</small><h2>محمد حسین تاجیک <span>| آترول</span></h2><small>نصب کرکره برقی در تهران • نصب و تعمیر در اسلامشهر</small></div><a class="btn btn-red" href="#contact">ارتباط با ما</a></div>
-    </section>
-    <section id="contact">
-      <div class="wrap">
-        <div class="section-head"><span class="kicker">تماس با آترول</span><h2>برای مشاوره و استعلام قیمت تماس بگیرید</h2><p>برای پاسخ‌گویی بهتر، نوع خدمات موردنیاز و شهر یا منطقه پروژه را اعلام کنید.</p></div>
-        <div class="contact-grid">
-          <div class="contact-panel"><h3>شماره‌های تماس</h3><p>تماس مستقیم با محمد حسین تاجیک، مجموعه آترول</p>
-            <a class="phone-link" href="tel:09121487861">۰۹۱۲۱۴۸۷۸۶۱</a>
-            <a class="phone-link" href="tel:09126961504">۰۹۱۲۶۹۶۱۵۰۴</a>
-            <div class="contact-actions"><a class="btn btn-red" href="tel:09121487861">تماس فوری</a></div>
-          </div>
-          <div class="contact-panel"><h3>صفحه اینستاگرام آترول</h3><p>برای دیدن محتوای مجموعه و پیگیری محصولات و خدمات، صفحه اینستاگرام را ببینید.</p><a class="social" href="https://www.instagram.com/atrol.tajik7/" target="_blank" rel="noopener">@atrol.tajik7 ↗</a><p style="margin-top:18px">خدمات: نصب کرکره برقی در تهران و حومه؛ نصب و تعمیر در اسلامشهر؛ فروش موتور، ریموت و قطعات.</p></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="wrap"><b>ATROLL | آترول - محمد حسین تاجیک</b><br>نصب کرکره برقی در تهران و حومه • نصب و تعمیر در اسلامشهر • فروش موتور، ریموت و قطعات<br>© تمامی حقوق محفوظ است.</div></footer>
-  <div class="mobile-bar"><a class="mobile-call" href="tel:09121487861">📞 تماس مستقیم با آترول</a></div>
-</body>
-</html>
+<div class="topline"><div class="container"><span>فروش و معرفی تجهیزات کرکره برقی آترول</span><span>تهران و حومه | نصب و تعمیر در اسلامشهر</span></div></div>
+<header>
+ <div class="container head-main">
+  <a href="#home" class="logo">ATRO<span>LL</span><small class="tag">تجهیزات و خدمات کرکره برقی</small></a>
+  <form class="search" onsubmit="event.preventDefault();const q=this.querySelector('input').value.trim();if(q){document.getElementById('products').scrollIntoView({behavior:'smooth'});document.getElementById('productSearch').textContent='نتایج معرفی‌شده برای: '+q;}">
+   <input aria-label="جست‌وجوی محصولات" placeholder="جست‌وجو بین موتور، ریموت، تیغه و قطعات..."><button type="submit">جست‌وجو⌕</button>
+  </form>
+  <a class="head-call" href="tel:09121487861">☎ ۰۹۱۲۱۴۸۷۸۶۱</a>
+ </div>
+ <nav class="navrow"><div class="container"><a href="#home">صفحه اصلی</a><a href="#categories">دسته‌بندی محصولات</a><a href="#products" class="highlight">موتور و تجهیزات</a><a href="#slats">مدل تیغه‌ها</a><a href="#services">خدمات نصب و تعمیر</a><a href="#about">درباره آترول</a><a href="#contact">تماس با ما</a></div></nav>
+</header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+ <div><span class="badge">آترول • انتخاب مطمئن برای کرکره برقی</span><h1>تجهیزات کرکره برقی و خدمات نصب <span>با اجرای حرفه‌ای</span></h1><p>برای نصب کرکره برقی، انتخاب تیغه و موتور، یا تهیه ریموت و قطعات، با مجموعه آترول تماس بگیرید. خدمات نصب در تهران و حومه و نصب و تعمیر در اسلامشهر.</p><div class="actions"><a class="btn btn-red" href="tel:09121487861">📞 تماس و استعلام قیمت</a><a class="btn btn-white" href="#products">مشاهده دسته‌بندی محصولات</a></div><div class="hero-points"><span>مشاوره پیش از خرید</span><span>تماس مستقیم</span><span>معرفی انواع تجهیزات</span></div></div>
+ <div class="hero-visual"><div class="shutter-scene" role="img" aria-label="تصویر نمایشی کرکره برقی فلزی"><div class="scene-top"><span>ATROLL • آترول</span><span>کرکره برقی</span></div><div class="shutter-door"></div><div class="floor"></div></div><div class="floating float-a">خدمات تخصصی<b>کرکره برقی</b></div><div class="floating float-b">تماس مستقیم<b>۰۹۱۲۱۴۸۷۸۶۱</b></div></div>
+</div></section>
+<div class="benefits"><div class="container benefit-grid"><div class="benefit"><span class="ico">⚙</span><div><b>موتور و تجهیزات</b><small>مشاوره برای انتخاب مناسب</small></div></div><div class="benefit"><span class="ico">▤</span><div><b>انواع تیغه کرکره</b><small>معرفی مدل و رنگ</small></div></div><div class="benefit"><span class="ico">⌂</span><div><b>نصب در تهران</b><small>تهران، چیتگر و حومه</small></div></div><div class="benefit"><span class="ico">🛠</span><div><b>تعمیر در اسلامشهر</b><small>هماهنگی تلفنی</small></div></div></div></div>
+<section class="categories" id="categories"><div class="container"><div class="section-title"><div><h2>دسته‌بندی محصولات آترول</h2><p>برای موجودی و قیمت روز هر محصول تماس بگیرید.</p></div><a href="#contact">استعلام تلفنی ←</a></div>
+<div class="cat-grid">
+<a class="cat" href="#products"><div class="cat-img"><svg viewBox="0 0 220 130" role="img" aria-label="تصویر نمایشی موتور کرکره برقی"><defs><linearGradient id="m1" x2="1" y2="1"><stop stop-color="#dfe5ec"/><stop offset="1" stop-color="#7e8b9c"/></linearGradient></defs><rect x="28" y="38" width="145" height="55" rx="17" fill="url(#m1)" stroke="#596a7f" stroke-width="3"/><rect x="46" y="48" width="78" height="35" rx="8" fill="#182b48"/><rect x="133" y="48" width="25" height="35" rx="5" fill="#df3344"/><path d="M173 51h20v28h-20" fill="#aab5c2" stroke="#566477" stroke-width="3"/><path d="M50 65h62" stroke="#dfe8f1" stroke-width="4"/></svg></div><div class="cat-copy"><h3>موتور کرکره برقی</h3><p>معرفی موتور و راهنمای انتخاب</p></div></a>
+<a class="cat" href="#products"><div class="cat-img"><svg viewBox="0 0 220 130" role="img" aria-label="تصویر نمایشی ریموت کرکره برقی"><defs><linearGradient id="r1" x2="1" y2="1"><stop stop-color="#48576a"/><stop offset="1" stop-color="#111a29"/></linearGradient></defs><rect x="75" y="8" width="70" height="114" rx="19" fill="url(#r1)" stroke="#6d7886" stroke-width="3"/><rect x="85" y="20" width="50" height="24" rx="6" fill="#e9edf2"/><circle cx="110" cy="66" r="12" fill="#df3344"/><circle cx="110" cy="93" r="9" fill="#b9c3ce"/><circle cx="110" cy="93" r="3" fill="#38465a"/></svg></div><div class="cat-copy"><h3>ریموت کنترل</h3><p>ریموت و تجهیزات کنترل</p></div></a>
+<a class="cat" href="#slats"><div class="cat-img"><svg viewBox="0 0 220 130" role="img" aria-label="تصویر نمایشی تیغه‌های کرکره برقی"><g stroke="#657487" stroke-width="2"><rect x="15" y="17" width="190" height="18" rx="5" fill="#dfe5eb"/><rect x="15" y="39" width="190" height="18" rx="5" fill="#aeb9c5"/><rect x="15" y="61" width="190" height="18" rx="5" fill="#e9edf1"/><rect x="15" y="83" width="190" height="18" rx="5" fill="#7f8c9c"/><rect x="15" y="105" width="190" height="15" rx="5" fill="#c5a17b"/></g></svg></div><div class="cat-copy"><h3>تیغه کرکره برقی</h3><p>مدل‌ها و رنگ‌های مختلف</p></div></a>
+<a class="cat" href="#products"><div class="cat-img"><svg viewBox="0 0 220 130" role="img" aria-label="تصویر نمایشی لوازم جانبی کرکره"><rect x="20" y="25" width="75" height="75" rx="10" fill="#253b5b"/><circle cx="58" cy="62" r="22" fill="#dce3eb" stroke="#7b899b" stroke-width="5"/><circle cx="58" cy="62" r="9" fill="#df3344"/><rect x="116" y="29" width="80" height="17" rx="5" fill="#8b99a9"/><rect x="116" y="54" width="80" height="17" rx="5" fill="#c5ced8"/><rect x="116" y="79" width="80" height="17" rx="5" fill="#596a7f"/></svg></div><div class="cat-copy"><h3>قطعات و لوازم جانبی</h3><p>استعلام قطعات و متعلقات</p></div></a>
+</div></div></section>
+<section id="products"><div class="container"><div class="section-title"><div><h2>محصولات و تجهیزات پرکاربرد</h2><p id="productSearch">برای قیمت و موجودی روز، تلفنی هماهنگ کنید؛ قیمت غیرواقعی درج نشده است.</p></div><a href="tel:09121487861">مشاوره خرید ←</a></div>
+<div class="products-grid">
+<article class="product"><div class="product-img"><span class="label">تجهیزات</span><svg viewBox="0 0 220 150" role="img" aria-label="موتور کرکره برقی"><defs><linearGradient id="pm" x2="0" y2="1"><stop stop-color="#dbe1e8"/><stop offset="1" stop-color="#77879a"/></linearGradient></defs><rect x="25" y="43" width="155" height="65" rx="22" fill="url(#pm)" stroke="#66768a" stroke-width="3"/><rect x="45" y="53" width="86" height="45" rx="9" fill="#1c2e49"/><rect x="139" y="55" width="24" height="41" rx="5" fill="#df3344"/><path d="M180 57h20v36h-20" fill="#aeb9c6" stroke="#5d6d81" stroke-width="3"/><path d="M55 76h66" stroke="#c8d5e3" stroke-width="4"/></svg></div><div class="product-info"><h3>موتور کرکره برقی</h3><p>انتخاب موتور متناسب با وزن و ابعاد کرکره؛ مدل مناسب را تلفنی بررسی کنید.</p><div class="product-bottom"><span class="price">استعلام قیمت</span><a class="mini-btn" href="tel:09121487861">تماس</a></div></div></article>
+<article class="product"><div class="product-img"><span class="label">کنترل</span><svg viewBox="0 0 220 150" role="img" aria-label="ریموت کنترل"><rect x="77" y="5" width="66" height="140" rx="19" fill="#202c3e" stroke="#718095" stroke-width="4"/><rect x="88" y="18" width="44" height="23" rx="5" fill="#e6ebf1"/><circle cx="110" cy="68" r="13" fill="#df3344"/><circle cx="110" cy="101" r="10" fill="#9daaba"/><circle cx="110" cy="126" r="6" fill="#6f7e91"/></svg></div><div class="product-info"><h3>ریموت کنترل کرکره</h3><p>برای بررسی سازگاری ریموت با سیستم کرکره، پیش از خرید تماس بگیرید.</p><div class="product-bottom"><span class="price">استعلام قیمت</span><a class="mini-btn" href="tel:09121487861">تماس</a></div></div></article>
+<article class="product"><div class="product-img"><span class="label">تیغه</span><svg viewBox="0 0 220 150" role="img" aria-label="تیغه آلومینیومی"><g stroke="#758397" stroke-width="2"><rect x="12" y="18" width="196" height="19" rx="5" fill="#d9e0e7"/><rect x="12" y="41" width="196" height="19" rx="5" fill="#b2bdc9"/><rect x="12" y="64" width="196" height="19" rx="5" fill="#e9edf1"/><rect x="12" y="87" width="196" height="19" rx="5" fill="#8e9bab"/><rect x="12" y="110" width="196" height="19" rx="5" fill="#c5a17b"/></g></svg></div><div class="product-info"><h3>تیغه آلومینیومی</h3><p>معرفی مدل‌ها و رنگ‌های مختلف تیغه برای مغازه و پارکینگ.</p><div class="product-bottom"><span class="price">استعلام قیمت</span><a class="mini-btn" href="tel:09121487861">تماس</a></div></div></article>
+<article class="product"><div class="product-img"><span class="label">قطعات</span><svg viewBox="0 0 220 150" role="img" aria-label="قطعات جانبی کرکره"><rect x="17" y="30" width="80" height="83" rx="10" fill="#263b5b"/><circle cx="57" cy="71" r="25" fill="#dbe2ea" stroke="#7c8b9c" stroke-width="6"/><circle cx="57" cy="71" r="10" fill="#df3344"/><rect x="117" y="35" width="84" height="17" rx="5" fill="#8796a8"/><rect x="117" y="62" width="84" height="17" rx="5" fill="#c5ced8"/><rect x="117" y="89" width="84" height="17" rx="5" fill="#53647b"/></svg></div><div class="product-info"><h3>قطعات و متعلقات</h3><p>برای استعلام قطعه موردنیاز، نوع دستگاه یا عکس قطعه را آماده داشته باشید.</p><div class="product-bottom"><span class="price">استعلام قیمت</span><a class="mini-btn" href="tel:09121487861">تماس</a></div></div></article>
+</div></div></section>
+<section class="slats" id="slats"><div class="container"><div class="section-title"><div><h2>مدل تیغه‌ها و رنگ‌بندی کرکره برقی</h2><p>نمونه‌های نمایشی برای آشنایی اولیه؛ نوع دقیق و موجودی را تلفنی تأیید کنید.</p></div><a href="tel:09121487861">راهنمای انتخاب ←</a></div>
+<div class="slat-layout"><div class="slat-photo"><img src="https://maslakshutter.com/wp-content/uploads/2024/08/aluminium-shutter-slat-color-charts.jpg" alt="نمونه تصویری تیغه‌های آلومینیومی کرکره برقی در رنگ‌های روشن، تیره و طرح چوب" loading="lazy"></div><div class="slat-details"><article class="slat"><div class="slat-swatch"></div><h3>نقره‌ای / آلومینیومی</h3><p>ظاهر فلزی ساده برای ورودی مغازه و پارکینگ.</p></article><article class="slat"><div class="slat-swatch"></div><h3>سفید</h3><p>رنگ روشن برای هماهنگی با نماهای روشن.</p></article><article class="slat"><div class="slat-swatch"></div><h3>ذغالی / طوسی تیره</h3><p>ظاهر مدرن برای نماهای امروزی.</p></article><article class="slat"><div class="slat-swatch"></div><h3>طرح چوب</h3><p>گزینه‌ای دکوراتیو؛ موجودی و نوع طرح باید بررسی شود.</p></article></div></div></div></section>
+<section id="services"><div class="container"><div class="section-title"><div><h2>خدمات آترول</h2><p>محدوده خدمات را دقیق انتخاب کرده‌ایم تا مشتری بداند چه خدماتی ارائه می‌شود.</p></div></div><div class="cat-grid">
+<article class="cat"><div class="cat-copy"><h3>نصب کرکره برقی</h3><p>برای مغازه، پارکینگ و ورودی واحدهای تجاری در تهران و حومه.</p></div></article>
+<article class="cat"><div class="cat-copy"><h3>نصب و تعمیر در اسلامشهر</h3><p>برای هماهنگی نصب یا تعمیر کرکره برقی در اسلامشهر تماس بگیرید.</p></div></article>
+<article class="cat"><div class="cat-copy"><h3>مشاوره موتور و تیغه</h3><p>راهنمایی برای انتخاب تجهیزات متناسب با ابعاد و نوع استفاده.</p></div></article>
+<article class="cat"><div class="cat-copy"><h3>فروش تجهیزات و قطعات</h3><p>برای موجودی و قیمت موتور، ریموت و قطعات استعلام بگیرید.</p></div></article>
+</div></div></section>
+<section><div class="container areas-grid"><div class="area"><h3>تهران، چیتگر و حومه</h3><p>خدمات نصب کرکره برقی و هماهنگی اجرای پروژه.</p><ul><li>نصب کرکره برقی</li><li>مشاوره انتخاب تجهیزات</li><li>استعلام قیمت تلفنی</li></ul></div><div class="area"><h3>اسلامشهر</h3><p>خدمات نصب و تعمیر کرکره برقی در محدوده اسلامشهر.</p><ul><li>نصب کرکره برقی</li><li>تعمیر کرکره برقی</li><li>بررسی نیاز و هماهنگی</li></ul></div></div></section>
+<section class="about-band" id="about"><div class="container about-flex"><div><p>مجموعه آترول</p><h2>محمد حسین تاجیک <span>| آترول</span></h2><p>خدمات کرکره برقی، معرفی تجهیزات و پاسخ‌گویی تلفنی</p></div><a class="btn btn-red" href="tel:09121487861">تماس مستقیم</a></div></section>
+<section class="contact" id="contact"><div class="container"><div class="section-title"><div><h2>تماس با آترول</h2><p>برای قیمت و موجودی روز محصولات، با ما تماس بگیرید.</p></div></div><div class="contact-grid"><div class="contact-box"><h3>شماره‌های تماس</h3><p>ارتباط مستقیم با محمد حسین تاجیک</p><a class="phone" href="tel:09121487861">۰۹۱۲۱۴۸۷۸۶۱</a><a class="phone" href="tel:09126961504">۰۹۱۲۶۹۶۱۵۰۴</a><a class="btn btn-red" href="tel:09121487861">📞 تماس فوری</a></div><div class="contact-box"><h3>آدرس و شبکه اجتماعی</h3><p class="address">اسلامشهر، سرنوری، نرسیده به دارالقرآن، خیابان شهباز سلمانی، جنب تیپاکس</p><p>اینستاگرام آترول</p><a href="https://www.instagram.com/atrol.tajik7/" style="color:var(--red);font-weight:bold" target="_blank" rel="noopener">@atrol.tajik7 ↗</a><p style="margin-top:14px">ساعت کاری و موجودی محصولات را هنگام تماس بپرسید.</p></div></div></div></section>
+</main>
+<footer><div class="container"><b>ATROLL | آترول - محمد حسین تاجیک</b><br>نصب کرکره برقی در تهران و حومه • نصب و تعمیر در اسلامشهر • معرفی موتور، ریموت، تیغه و قطعات<br>قیمت و موجودی محصولات پس از تماس تأیید می‌شود.</div></footer>
+<a class="mobile-call" href="tel:09121487861">📞 تماس مستقیم با آترول</a>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"آترول - محمد حسین تاجیک","telephone":["+989121487861","+989126961504"],"url":"https://ketabiiarezoo-ui.github.io/My-first-website-project-atroll/","areaServed":["تهران","چیتگر","اسلامشهر"],"description":"نصب کرکره برقی در تهران و حومه؛ نصب و تعمیر در اسلامشهر؛ معرفی و فروش موتور، ریموت، تیغه و قطعات."}</script>
+</body></html>

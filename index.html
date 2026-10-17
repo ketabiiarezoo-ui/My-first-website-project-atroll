@@ -105,6 +105,20 @@ footer b{color:#f2c400}
 @media(max-width:850px){.hero-grid{gap:28px;padding:42px 0}.navrow .container{gap:20px}}
 @media(max-width:560px){.hero-grid{padding:32px 0}.hero-visual{min-height:245px}.shutter-door{height:170px}.section-title h2{font-size:22px}.head-main{gap:10px}.logo{font-size:23px}}
 
+
+/* Real photo gallery */
+.photo-gallery{background:#fff;padding:64px 0}
+.real-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.real-photo-card{border:1px solid #e5e3dc;border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #00000008;transition:transform .2s,box-shadow .2s}
+.real-photo-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px #00000013}
+.real-photo-card img{display:block;width:100%;height:210px;object-fit:cover;background:#f4f3ee}
+.real-photo-card div{padding:15px}
+.real-photo-card b{display:block;font-size:14px;color:#202020;margin-bottom:5px}
+.real-photo-card span{display:block;color:#686868;font-size:11px;line-height:1.9}
+.photo-note{font-size:11px;color:#777;margin-top:17px}
+@media(max-width:850px){.real-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.photo-gallery{padding:40px 0}.real-photo-grid{gap:10px}.real-photo-card img{height:145px}.real-photo-card div{padding:10px}.real-photo-card b{font-size:12px}.real-photo-card span{font-size:10px}}
+
 </style>
 </head>
 <body>
@@ -117,7 +131,7 @@ footer b{color:#f2c400}
   </form>
   <a class="head-call" href="tel:09121487861">☎ ۰۹۱۲۱۴۸۷۸۶۱</a>
  </div>
- <nav class="navrow"><div class="container"><a href="#home">خانه</a><a href="#categories">دسته‌بندی محصولات</a><a href="#products" class="highlight">محصولات کرکره برقی</a><a href="#models">انواع تیغه و مدل‌ها</a><a href="#slats">رنگ‌بندی تیغه</a><a href="#services">نصب و تعمیر</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></div></nav>
+ <nav class="navrow"><div class="container"><a href="#home">خانه</a><a href="#gallery">گالری عکس‌ها</a><a href="#categories">دسته‌بندی محصولات</a><a href="#products" class="highlight">محصولات کرکره برقی</a><a href="#models">انواع تیغه و مدل‌ها</a><a href="#slats">رنگ‌بندی تیغه</a><a href="#services">نصب و تعمیر</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></div></nav>
 </header>
 <div style="background:#fff;border-bottom:1px solid var(--line);font-size:12px;color:var(--navy)"><div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 0"><span>✓ مشاوره انتخاب موتور و تیغه</span><span>✓ معرفی تجهیزات و قطعات کرکره برقی</span><span>✓ هماهنگی نصب در تهران و حومه</span><span>✓ نصب و تعمیر در اسلامشهر</span></div></div>
 <main>
@@ -126,6 +140,20 @@ footer b{color:#f2c400}
  <div class="hero-visual"><div class="shutter-scene" role="img" aria-label="تصویر نمایشی کرکره برقی فلزی"><div class="scene-top"><span>نمونه نمایشی</span><span>کرکره برقی</span></div><div class="shutter-door"></div><div class="floor"></div></div><div class="floating float-a">خدمات تخصصی<b>کرکره برقی</b></div><div class="floating float-b">تماس مستقیم<b>۰۹۱۲۱۴۸۷۸۶۱</b></div></div>
 </div></section>
 <div class="benefits"><div class="container benefit-grid"><div class="benefit"><span class="ico">⚙</span><div><b>موتور و تجهیزات</b><small>مشاوره برای انتخاب مناسب</small></div></div><div class="benefit"><span class="ico">▤</span><div><b>انواع تیغه کرکره</b><small>معرفی مدل و رنگ</small></div></div><div class="benefit"><span class="ico">⌂</span><div><b>نصب در تهران</b><small>تهران، چیتگر و حومه</small></div></div><div class="benefit"><span class="ico">🛠</span><div><b>تعمیر در اسلامشهر</b><small>هماهنگی تلفنی</small></div></div></div></div>
+
+<section class="photo-gallery" id="gallery">
+ <div class="container">
+  <div class="section-title"><div><h2>گالری تصویری کرکره برقی و تجهیزات</h2><p>نمونه عکس‌های واقعی از انواع کرکره و تجهیزات برای آشنایی با مدل‌ها</p></div><a href="#contact">استعلام قیمت ←</a></div>
+  <div class="real-photo-grid">
+   <article class="real-photo-card"><img src="https://www.rpmanufacturing.co.uk/assets/images/products-services/shopfronts/shop-front-closed.jpg" alt="کرکره برقی فلزی مشکی روی نمای فروشگاه" loading="lazy"><div><b>کرکره فلزی فروشگاهی</b><span>نمونه ظاهر کرکره بسته برای مغازه و واحد تجاری</span></div></article>
+   <article class="real-photo-card"><img src="https://image.made-in-china.com/2f0j00RVBuUIdbhnzD/High-Visibility-Transparent-Polycarbonate-Roller-Shutter-for-Commercial-Shop.webp" alt="کرکره شفاف پلی کربنات روی ورودی فروشگاه" loading="lazy"><div><b>کرکره شفاف پلی‌کربنات</b><span>مدل مناسب ویترین‌هایی که حفظ دید اهمیت دارد</span></div></article>
+   <article class="real-photo-card"><img src="https://media.adeo.com/mkp/02f409ff37c40b835053152ddff323d2/media.jpeg" alt="نمونه موتور کرکره برقی و ریموت کنترل" loading="lazy"><div><b>موتور و ریموت کنترل</b><span>نمونه تجهیزات مورد استفاده در سیستم کرکره برقی</span></div></article>
+   <article class="real-photo-card"><img src="https://britanniaretail.com/cdn/shop/products/steel-shopfront-electric-security-roller-shutterbritannia-retail-856863_1200x1200_crop_center.jpg?v=1742990013" alt="کرکره برقی آلومینیومی نقره‌ای فروشگاهی" loading="lazy"><div><b>کرکره آلومینیومی نقره‌ای</b><span>نمونه ظاهر تیغه‌های فلزی در نمای تجاری</span></div></article>
+  </div>
+  <p class="photo-note">توجه: عکس‌های این گالری برای معرفی مدل‌ها و نمونه‌های رایج بازار هستند و نمونه‌کار اختصاصی آترول محسوب نمی‌شوند. برای نمایش نمونه‌کارهای خود آترول، عکس‌های واقعی پروژه‌ها را بعداً جایگزین می‌کنیم.</p>
+ </div>
+</section>
+
 <section class="categories" id="categories"><div class="container"><div class="section-title"><div><h2>خرید و معرفی تجهیزات کرکره برقی آترول</h2><p>برای موجودی و قیمت روز هر محصول تماس بگیرید.</p></div><a href="#contact">استعلام تلفنی ←</a></div>
 <div class="cat-grid">
 <a class="cat" href="#products"><div class="cat-img"><svg viewBox="0 0 220 130" role="img" aria-label="تصویر نمایشی موتور کرکره برقی"><defs><linearGradient id="m1" x2="1" y2="1"><stop stop-color="#dfe5ec"/><stop offset="1" stop-color="#d6b800"/></linearGradient></defs><rect x="28" y="38" width="145" height="55" rx="17" fill="url(#m1)" stroke="#8a6900" stroke-width="3"/><rect x="46" y="48" width="78" height="35" rx="8" fill="#5a4700"/><rect x="133" y="48" width="25" height="35" rx="5" fill="#f2c400"/><path d="M173 51h20v28h-20" fill="#fffdf3" stroke="#8a6900" stroke-width="3"/><path d="M50 65h62" stroke="#dfe8f1" stroke-width="4"/></svg></div><div class="cat-copy"><h3>موتور کرکره برقی</h3><p>معرفی موتور و راهنمای انتخاب</p></div></a>
